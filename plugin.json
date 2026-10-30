@@ -1,0 +1,26 @@
+{
+  "name": "게임 기획서",
+  "version": "0.1.0",
+  "description": "모든 에이전트가 gdd_* 도구로 열람·수정하는 공유 게임 기획서(Markdown). 앱 안 뷰어와 브라우저 HTML로 열람.",
+  "main": "main.js",
+  "renderer": "renderer.js",
+  "styles": "styles.css",
+  "settingsSchema": {
+    "type": "object",
+    "properties": {
+      "docsDir": {
+        "type": "string",
+        "title": "기획서 폴더",
+        "description": "기획서 .md 파일을 저장할 폴더(절대 경로). 비워 두면 문서\\GameDesignDocs 를 사용합니다. Unity 프로젝트 안 폴더로 지정하면 버전 관리에 함께 들어갑니다."
+      }
+    }
+  },
+  "id": "game-design-doc",
+  "tags": [
+    "기획서",
+    "GDD",
+    "Markdown",
+    "문서"
+  ],
+  "usage": "에이전트에게 \"게임 기획서 만들어줘/전투 섹션 고쳐줘\"라고 하면 gdd_* 도구로 작성하고, 사이드바 \"게임 기획서\"에서 HTML로 봅니다."
+}
